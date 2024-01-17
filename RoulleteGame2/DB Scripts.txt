@@ -1,0 +1,12 @@
+I used mysql for this project
+
+1. CREATE DATABASE IF NOT EXISTS roulette_game_db;
+2. USE roulette_game_db;
+3. CREATE TABLE IF NOT EXISTS player_statistics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_name VARCHAR(255) NOT NULL,
+    rounds_played INT NOT NULL,
+    rounds_won INT NOT NULL,
+    rounds_lost INT NOT NULL,
+    win_percentage DECIMAL(5,2) NOT NULL
+   );
